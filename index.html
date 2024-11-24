@@ -60,7 +60,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn js-open-modal" type="button">Order Service</button>
+          <button class="btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -515,9 +517,9 @@
       </section>
     </main>
 
-    <div class="backdrop js-modal">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close js-close-modal" type="button">
+        <button class="modal-close" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -669,6 +671,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-third-colomn">
+          <p class="social-desc">Subscribe</p>
+
+          <form class="subscribe-form" name="subscribe">
+            <label class="subscribe-label" for="user-email"></label>
+            <input
+              class="subscribe-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="E-mail"
+            />
+
+            <button class="btn-subscribe" type="submit">
+              Subscribe
+              <svg class="team-social-icons" width="24" height="20">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
